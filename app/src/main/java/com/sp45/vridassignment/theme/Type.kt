@@ -1,4 +1,4 @@
-package com.sp45.vridassignment.ui.theme
+package com.sp45.vridassignment.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

@@ -1,6 +1,5 @@
-package com.sp45.vridassignment.ui.theme
+package com.sp45.vridassignment.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
