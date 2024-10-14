@@ -14,7 +14,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.RectangleShape
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -26,7 +26,7 @@ fun BlogItem(modifier: Modifier, blog: Blogs, onBlogClick: (String) -> Unit) {
     Column(
         modifier = modifier
             .fillMaxWidth()
-            .padding(20.dp)
+            .padding(12.dp)
             .clickable { onBlogClick(blog.link) }
     ) {
         Card(
@@ -42,13 +42,17 @@ fun BlogItem(modifier: Modifier, blog: Blogs, onBlogClick: (String) -> Unit) {
                     model = blog.jetpackFeaturedMediaUrl,
                     contentDescription = null,
                     modifier = modifier
-                        .padding(16.dp)
+                        .padding(10.dp)
                         .fillMaxWidth()
-                        .clip(RectangleShape),
+                        .clip(RoundedCornerShape(8.dp)),
                     contentScale = ContentScale.Crop
                 )
-                Text(text = blog.title.rendered, fontWeight = FontWeight.Bold)
-                Text(text = blog.dateGmt)
+                Text(
+                    text = blog.title.rendered,
+                    fontWeight = FontWeight.Bold,
+                    modifier = modifier.padding(6.dp),
+                    color = Color.White
+                )
                 Spacer(modifier = modifier.padding(4.dp))
             }
         }
