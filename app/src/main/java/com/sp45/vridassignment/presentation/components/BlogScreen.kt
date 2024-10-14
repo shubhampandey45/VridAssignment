@@ -12,10 +12,8 @@ import androidx.compose.ui.Modifier
 import com.sp45.vridassignment.presentation.state.BlogsState
 
 @Composable
-fun BlogScreen(modifier: Modifier, blogsState: BlogsState)
-{
-    if(blogsState.isLoading)
-    {
+fun BlogScreen(modifier: Modifier, blogsState: BlogsState, onBlogClick: (String) -> Unit) {
+    if(blogsState.isLoading) {
         Box(modifier = modifier.fillMaxSize()){
             CircularProgressIndicator(modifier = modifier.align(Alignment.Center))
         }
@@ -25,11 +23,10 @@ fun BlogScreen(modifier: Modifier, blogsState: BlogsState)
         }
     }
 
-    if(blogsState.blogs?.isNotEmpty()!!)
-    {
+    if(blogsState.blogs?.isNotEmpty() == true) {
         LazyColumn {
-            items(blogsState.blogs){
-                BlogItem(modifier = modifier, blog = it)
+            items(blogsState.blogs) {
+                BlogItem(modifier = modifier, blog = it, onBlogClick = onBlogClick)
             }
         }
     }

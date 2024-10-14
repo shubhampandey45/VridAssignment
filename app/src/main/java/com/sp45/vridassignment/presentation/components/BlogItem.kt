@@ -1,5 +1,6 @@
 package com.sp45.vridassignment.presentation.components
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -21,11 +22,12 @@ import coil.compose.AsyncImage
 import com.sp45.vridassignment.domain.model.Blogs
 
 @Composable
-fun BlogItem(modifier: Modifier, blog: Blogs) {
+fun BlogItem(modifier: Modifier, blog: Blogs, onBlogClick: (String) -> Unit) {
     Column(
         modifier = modifier
             .fillMaxWidth()
             .padding(20.dp)
+            .clickable { onBlogClick(blog.link) }
     ) {
         Card(
             elevation = CardDefaults.cardElevation(8.dp),
