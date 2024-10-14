@@ -5,7 +5,7 @@ The app retrieves blog data from the below given API, display it in an organized
 manner, and allow users to read individual blog posts. 
 WebView is used to display content of each individual blog.
 
-The basic app will have two screens -
+The basic app has two screens -
 1. List of blogs
 2. Individual blog content (using WebView)
 
