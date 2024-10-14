@@ -13,16 +13,18 @@ Api : https://blog.vrid.in/wp-json/wp/v2/posts?per_page=10&page=1
 
 ## Tech Stack
 - Kotlin
-* Jetpack Compose
-* Coroutines
-+ Retrofit
-* Hilt, Dagger
-+ Navigation Compose
+- Jetpack Compose
+- Coroutines
+- Retrofit
+- Hilt, Dagger
+- Navigation Compose
 - Clean Architecture
 - Coil library
 
-![Clean Architecture Screenshot](https://drive.google.com/file/d/1knVNb9Kn4AtqR9bULrGeuan09S1DJhWd/view?usp=sharing)
+![Screenshot 2024-10-15 014459](https://github.com/user-attachments/assets/f0804013-be09-4660-973b-f3f0ee17b2b0)
 
 ## Demo
-![Demo](https://drive.google.com/file/d/1A6b-NfLLofVAfQWa6lm86sRHheZiqOSo/view?usp=sharing)
+
+https://github.com/user-attachments/assets/74377b8c-dd84-4912-bcb3-34a913a9e222
+
 
